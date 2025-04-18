@@ -22,14 +22,14 @@ class Mentor:
         else:
             return 'Ошибка'
         
-class Lecturer:
+class Lecturer(Mentor):
     
     def __init__(self, name, surname):
         self.name = name 
         self.surname = surname
         self.courses_attached = [] 
 
-class Reviewer:
+class Reviewer(Mentor):
 
     def __ini__(self, name, surname):
         self.name = name 
